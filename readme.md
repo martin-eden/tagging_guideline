@@ -18,13 +18,12 @@ data processing. Word by word, line by line...
 
 ## Savior
 
-I've established markup style and used it for my personal code since 2002.
-In 2016 I was asked to explain it. So demonstrating it here, not obligating anyone to use.
+I've established markup style and used it for my personal code since 2002. It allows easy regroup past commits by themes and merge them. (For those who like to keep history simple and know what `$ git rebase -i HEAD~20` does.)
 
 
 ## Panacea
 
-Mark changes by your judgement and by code changes they do.
+Mark changes by your judgement and by code changes they do. Also mention part names as tags.
 
     [.^] [readme] Reworded some lines.
     [?+] [string-concatter] Added experimental garbage-collection heuristic.
@@ -32,16 +31,12 @@ Mark changes by your judgement and by code changes they do.
     [/] [file/as_string] renamed from [string/from_file].
 
 I hope you feel. Just putting at most one tag with change type
-(with all that bogus symbols) and arbitrary amount tags with names.
+(with all that bogus symbols) and arbitrary amount of tags with names.
 Idea is that you'd be able to "grep" all changes marked for example
 `[table-serializer]`.
 
 
 ### Details
-
-We have tags with two types. First with *change type*, others with
-*subsystem*.
-
 
 #### Symbols meaning
 
@@ -71,8 +66,6 @@ We have tags with two types. First with *change type*, others with
 
 #### Notes
 
-* This systems allows you to regroup commits by sybsystem. (For those who like to keep
-history simple and know what `$ git rebase -i HEAD~20` does.)
 * I recommend to place tags only when you're sure that it make things
 more clear and do not add obscurity or excessiveness. For example both
 `Initial commit.` and `[!] Initial commit.` is ok. But `[!+] Initial
